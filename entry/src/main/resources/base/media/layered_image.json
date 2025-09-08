@@ -1,0 +1,7 @@
+{
+  "layered-image":
+  {
+    "background" : "$media:happy",
+    "foreground" : "$media:happy"
+  }
+}
