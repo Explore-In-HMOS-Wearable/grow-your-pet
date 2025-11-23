@@ -12,21 +12,21 @@ export struct CatPage {
     if (this.loveStatus <= 80) {
       this.loveStatus = this.loveStatus + 20;
       AppStorage.setOrCreate('love', this.loveStatus)
-      console.log(this.loveStatus.toString())
+      console.info(this.loveStatus.toString())
     }
   }
   wash() {
     if (this.clean <= 80) {
       this.clean = this.clean + 20;
       AppStorage.setOrCreate('wash', this.clean)
-      console.log(this.clean.toString())
+      console.info(this.clean.toString())
     }
   }
   feed() {
     if (this.hungry <= 80) {
       this.hungry = this.hungry + 20
       AppStorage.setOrCreate('hungry', this.hungry)
-      console.log(this.hungry.toString())
+      console.info(this.hungry.toString())
     }
   }
 
