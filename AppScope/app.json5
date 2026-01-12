@@ -1,6 +1,6 @@
 {
   "app": {
-    "bundleName": "com.hmosdemos.growyourpet",
+    "bundleName": "com.hmosdemos.wearable.grow_your_pet",
     "vendor": "hmosdemos",
     "versionCode": 1000000,
     "versionName": "1.0.0",

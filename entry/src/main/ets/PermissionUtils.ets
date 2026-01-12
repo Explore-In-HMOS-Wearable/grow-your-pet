@@ -10,12 +10,11 @@ const DOMAIN_NUMBER: number = 0xFF00;
 
 export default async function getPermission(context: common.UIAbilityContext): Promise<void> {
   notificationManager.isNotificationEnabled().then((data: boolean) => {
-    hilog.info(DOMAIN_NUMBER, TAG, 'isNotificationEnabled success, data: ' + JSON.stringify(data));
     if (!data) {
       notificationManager.requestEnableNotification(context).then(() => {
         hilog.info(DOMAIN_NUMBER, TAG, `[ANS] requestEnableNotification success`);
       }).catch((err : BusinessError) => {
-        if (1600004 == err.code) {
+        if (1600004 === err.code) {
           hilog.error(DOMAIN_NUMBER, TAG, `[ANS] requestEnableNotification refused, code is ${err.code}, message is ${err.message}`);
         } else {
           hilog.error(DOMAIN_NUMBER, TAG, `[ANS] requestEnableNotification failed, code is ${err.code}, message is ${err.message}`);
@@ -35,10 +34,10 @@ export function sendReminder() {
       {
         title: 'close',
         type: reminderAgentManager.ActionButtonType.ACTION_BUTTON_TYPE_CLOSE
-      },
+      }
     ],
     wantAgent: {
-      pkgName: 'com.hmosdemos.growyourpet',
+      pkgName: 'com.hmosdemos.wearable.grow_your_pet',
       abilityName: 'EntryAbility'
     },
     title: 'Isabella',
@@ -51,7 +50,7 @@ export function sendReminder() {
     try {
       vibrator.startVibration({
         type: 'time',
-        duration: 1000,
+        duration: 1000
       }, {
         id: 0,
         usage: 'alarm'

@@ -32,7 +32,7 @@ export struct StatusPage {
     Stack() {
       ArcList({ header: this.tabBar1, initialIndex: 0 }) {
         ArcListItem() {
-          Text('Cleaning is: %' + this.cleanStatus).fontColor(Color.Black).fontSize(12)
+          Text(`Cleaning is: %  ${this.cleanStatus}`).fontColor(Color.Black).fontSize(12)
         }
 
         ArcListItem() {
@@ -43,7 +43,7 @@ export struct StatusPage {
         }
 
         ArcListItem() {
-          Text('Love is: %' + this.loveStatus).fontColor(Color.Black).fontSize(12)
+          Text(`Love is: % ${this.loveStatus}`).fontColor(Color.Black).fontSize(12)
         }
 
         ArcListItem() {
@@ -52,7 +52,7 @@ export struct StatusPage {
         }
 
         ArcListItem() {
-          Text('Hungry: %' + this.hungryStatus).fontColor(Color.Black).fontSize(12)
+          Text(`Hungry: % ${this.hungryStatus}`).fontColor(Color.Black).fontSize(12)
         }
 
         ArcListItem() {
