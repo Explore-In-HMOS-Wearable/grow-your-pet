@@ -3,6 +3,46 @@
     {
       "name": "start_window_background",
       "value": "#FFFFFF"
+    },
+    {
+      "name": "page_background",
+      "value": "#EFEFE8"
+    },
+    {
+      "name": "indicator_pink",
+      "value": "#FFC0CB"
+    },
+    {
+      "name": "brand_pink",
+      "value": "#E75480"
+    },
+    {
+      "name": "border_pink",
+      "value": "#FFC0CB"
+    },
+    {
+      "name": "text_gray",
+      "value": "#888888"
+    },
+    {
+      "name": "bond_pink_dark",
+      "value": "#C12B78"
+    },
+    {
+      "name": "card_pink_bg",
+      "value": "#FFE4EC"
+    },
+    {
+      "name": "text_dark",
+      "value": "#333333"
+    },
+    {
+      "name": "stat_blue",
+      "value": "#00BFFF"
+    },
+    {
+      "name": "stat_orange",
+      "value": "#FF7F00"
     }
   ]
 }
